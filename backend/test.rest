@@ -1,0 +1,135 @@
+### create customer1
+POST http://localhost:5000/api/customer/createCustomer
+Content-Type: application/json
+
+{
+    "name" : "Rahul",
+    "city" : "Surat",
+    "conntype" : "residential",
+    "cunit" : 385,
+    "punit" : 320,
+    "fcharge" : 150
+}
+
+### create customer2
+POST http://localhost:5000/api/customer/createCustomer
+Content-Type: application/json
+
+{
+    "name" : "Priya",
+    "city" : "Surat",
+    "conntype" : "residential",
+    "cunit" : 210,
+    "punit" : 180,
+    "fcharge" : 150
+}
+
+### create customer3
+POST http://localhost:5000/api/customer/createCustomer
+Content-Type: application/json
+
+{
+    "name" : "Amit",
+    "city" : "Ahmedabad",
+    "conntype" : "commercial",
+    "cunit" : 720,
+    "punit" : 650,
+    "fcharge" : 300
+}
+
+### create customer4
+POST http://localhost:5000/api/customer/createCustomer
+Content-Type: application/json
+
+{
+    "name" : "Kiran",
+    "city" : "Vadodara",
+    "conntype" : "commercial",
+    "cunit" : 480,
+    "punit" : 400,
+    "fcharge" : 300
+}
+
+
+### get all
+GET http://localhost:5000/api/customer/getAll
+
+### get bill all
+GET http://localhost:5000/api/customer/getBillById/6ae774bbfb450fe1f3a5386a
+
+### get bill for all
+GET http://localhost:5000/api/customer/getBillByAll
+
+### get summary
+GET http://localhost:5000/api/customer/getSummary
+
+### get city data
+GET http://localhost:5000/api/customer/cityData
+
+###add data
+POST http://localhost:5000/api/sales/createSales
+Content-Type: application/json
+
+{
+    "name" : "Raj",
+    "city" : "surat",
+    "target" : 500000,
+    "sales" : 625000,
+    "orders" : 48,
+    "returns" : 3,
+    "exp" : 4
+}
+
+###add data
+POST http://localhost:5000/api/sales/createSales
+Content-Type: application/json
+
+{
+    "name" : "Priya",
+    "city" : "ahmedabad",
+    "target" : 450000,
+    "sales" : 410000,
+    "orders" : 42,
+    "returns" : 5,
+    "exp" : 3
+}
+
+###add data
+POST http://localhost:5000/api/sales/createSales
+Content-Type: application/json
+
+{
+    "name" : "Amit",
+    "city" : "surat",
+    "target" : 600000,
+    "sales" : 720000,
+    "orders" : 55,
+    "returns" : 4,
+    "exp" : 6
+}
+
+###add data
+POST http://localhost:5000/api/sales/createSales
+Content-Type: application/json
+
+{
+    "name" : "Neha",
+    "city" : "vadodara",
+    "target" : 400000,
+    "sales" : 380000,
+    "orders" : 36,
+    "returns" : 2,
+    "exp" : 2
+}
+
+### get all
+GET http://localhost:5000/api/sales/getAll
+
+### get cal by one
+GET http://localhost:5000/api/sales/get/6ae79b0823d8c484e12b7552
+
+### get all
+GET  http://localhost:5000/api/sales/getallcal
+
+### get summary
+GET http://localhost:5000/api/sales/getsummary
